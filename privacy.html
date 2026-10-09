@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy and data handling for the private DreamTouch Local Worker YouTube analytics connection.">
+  <title>Privacy policy — DreamTouch Local Worker</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="index.html">DreamTouch Local Worker</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
+<main class="wrap">
+  <p class="eyebrow">Data handling</p><h1>Privacy policy</h1><p class="date">Effective 9 October 2026</p>
+  <p>DreamTouch Local Worker is a private Windows application operated by the owner of DreamTouch ASMR. This policy describes its read-only Google OAuth and YouTube analytics connection and this public information site.</p>
+  <h2>Access and purpose</h2>
+  <p>The owner personally authorizes Google access in Google's consent screen. The application requests only <code>youtube.readonly</code> and <code>yt-analytics.readonly</code>. It accesses the authorized channel's identity, channel statistics, video catalogue and metadata, publication and privacy information, and available aggregate Analytics and Reporting data.</p>
+  <p>Analytics can include views, watch time, average view duration and percentage, subscriber gains and losses, traffic sources, aggregate audience segments, retention curves, and thumbnail impressions and click-through rate when supported and available. These reports do not identify individual viewers. Missing metrics are not invented.</p>
+  <p>The data is used for private channel analysis, historical comparisons, evaluation of creative hypotheses and the owner's future creative decisions. It is not used to sell advertising, target individual viewers or provide a public analytics database.</p>
+  <h2>Storage and security</h2>
+  <p>OAuth access and refresh tokens are stored in an encrypted Windows Data Protection API (DPAPI) vault associated with the owner's Windows account. The OAuth client configuration is kept separately from the public site and outside the application's source repository. Google API requests use HTTPS.</p>
+  <p>Analytics responses, downloaded report files, derived observations and decision records are stored in local files and a local index, with local backup copies for recovery. Those analytical files are not individually encrypted by the token vault; their protection depends on the owner's Windows account, file permissions, device security and any disk encryption configured on that device. DPAPI is not a guarantee against malware or another process running as the owner.</p>
+  <p>Analytical records are currently retained for historical comparison. The existing application does not implement an automatic age-based purge. Revoking OAuth does not automatically erase files or backups already collected. The operator must keep API data refreshed or remove it where the applicable YouTube API retention rules require this.</p>
+  <h2>Codex and off-device processing</h2>
+  <p>The owner uses OpenAI Codex for requested analysis and creative reasoning. Selected analytics, derived observations and relevant analytical context can be included in Codex inputs and processed by OpenAI. Consequently, this application does not promise that all Google-derived data remains solely on the local computer.</p>
+  <p>OpenAI's handling and retention of that content depend on the applicable product, account terms and data controls. This policy does not assert that a particular provider retention or model-training setting has been verified for every account. The operator must use provider settings and agreements consistent with Google's applicable data-use restrictions. The worker itself does not train or fine-tune a general-purpose AI model.</p>
+  <p>OAuth client secrets, access tokens and refresh tokens are not included in analytical reports or intentionally supplied to Codex, the public website or its hosting repository. The application does not sell Google user data or transfer it to advertising platforms or data brokers.</p>
+  <h2>Limited use</h2>
+  <p>DreamTouch Local Worker's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Data provided for AI-assisted analysis is limited to delivering the owner's requested analytical and creative-planning features, with the owner's consent. This statement is not a claim that Google has audited or certified this application.</p>
+  <h2>Revocation and deletion</h2>
+  <p>You can revoke the application's access at <a href="https://myaccount.google.com/connections">Google Account connections</a>. The application must not bypass revocation; subsequent API access requires a valid grant. Disconnecting the application does not delete existing YouTube videos or analytics held by Google.</p>
+  <p>To delete the local authorization and collected analytical data, the owner can remove the token vault, local analytical records and their backup copies. For assistance or a deletion request, contact <a href="mailto:arsent678@gmail.com">arsent678@gmail.com</a>. Data previously provided to OpenAI or Google is also governed by those providers' retention and deletion mechanisms.</p>
+  <h2>This information website</h2>
+  <p>This site contains public application information only. It has no Google sign-in, analytics dashboard, data collection form, advertising code or application tracking script. It is hosted on GitHub Pages. GitHub logs visitors' IP addresses for security purposes, even when they are not signed in; see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Visiting these pages does not connect a YouTube account.</p>
+  <h2>External services and changes</h2>
+  <p>The application uses YouTube API Services. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and <a href="https://openai.com/policies/privacy-policy/">OpenAI Privacy Policy</a>. These services have their own terms and data practices.</p>
+  <p>Material changes to Google data access, purpose or sharing will be disclosed before the changed use begins and will require consent where applicable. The effective date above identifies this version.</p>
+</main>
+<footer><div class="wrap"><span>DreamTouch Local Worker</span><span><a href="index.html">Home</a> · <a href="terms.html">Terms of use</a></span></div></footer>
+</body>
+</html>
